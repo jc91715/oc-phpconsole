@@ -3,3 +3,6 @@
     - create_scripts_table.php
 1.0.0:
     - '1st stable version'
+1.0.1:
+    - 'add_filed_to_scripts_table.php'
+    - add_filed_to_scripts_table.php
