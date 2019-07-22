@@ -8,7 +8,6 @@
 <?php if (!$this->fatalError): ?>
 
     <?= Form::open(['class' => 'layout']) ?>
-<input name="Script[run_result]" value="" id="Form-field-Script-run-result" type="hidden" style="display: none" />
 
         <div class="layout-row">
             <?= $this->formRender() ?>
@@ -30,7 +29,7 @@
                     data-request-data="redirect:0"
                     data-request-success="
                         $('#phpConsole_outputWrapper').show()
-                        $('#Form-field-Script-run-result').val(data.output)
+                        $('#Form-field-Script-run_result').val(data.output)
                         $('html, body').animate({
                             scrollTop: ($('#phpConsole_outputWrapper').offset().top)
                         },500);"
