@@ -20,7 +20,7 @@ fields:
         type: codeeditor
     run_result:
         label: 运行结果
-        disabled: true
+
 
 
 
