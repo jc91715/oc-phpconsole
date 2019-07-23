@@ -40,4 +40,18 @@ class Script extends Model
     public $morphMany = [];
     public $attachOne = [];
     public $attachMany = [];
+
+    public function getJsRunResult(){
+        return ' <script>console.log = function(message) {$(\'#result\').append(message);};eval(`'.$this->code.'`)</script>';
+    }
+
+    public function getPhpRunResult()
+    {
+        $code = preg_replace('/^ *(<\?php|<\?)/mi', '', $this->code);
+        ob_start();
+        eval($code);
+        $output= ob_get_clean();
+        return '<pre class="prettyprint"><code class="prettyprint">'.$ouput.'</code></pre>';
+    }
+
 }
