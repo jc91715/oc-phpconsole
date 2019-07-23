@@ -11,6 +11,11 @@ fields:
             php: php
             js: js
         default: php
+    if_run:
+        label: 前台运行
+        span: auto
+        type: checkbox
+        default: true
     title:
         label: 'rv.phpconsole::lang.models.script.title'
         span: auto
