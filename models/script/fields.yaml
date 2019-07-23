@@ -4,7 +4,7 @@
 
 fields:
     type:
-        label: 'rv.phpconsole::lang.models.script.title'
+        label: type
         span: auto
         type: dropdown
         options:
