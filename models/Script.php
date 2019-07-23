@@ -42,11 +42,17 @@ class Script extends Model
     public $attachMany = [];
 
     public function getJsRunResult(){
+        if(!$this->if_run){
+            return ' <script>console.log = function(message) {$(\'#result\').append(message);};eval(`'.'console.log('.$this->run_result.')'.'`)</script>';
+        }
         return ' <script>console.log = function(message) {$(\'#result\').append(message);};eval(`'.$this->code.'`)</script>';
     }
 
     public function getPhpRunResult()
     {
+        if(!$this->if_run){
+            return  '<pre class="prettyprint"><code class="prettyprint">'.$this->run_result.'</code></pre>';
+        }
         $code = preg_replace('/^ *(<\?php|<\?)/mi', '', $this->code);
         ob_start();
         eval($code);
