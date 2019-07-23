@@ -6,3 +6,7 @@
 1.0.1:
     - 'add_filed_to_scripts_table.php'
     - add_filed_to_scripts_table.php
+
+1.0.2:
+    - 'add_type_filed_to_scripts_table.php'
+    - add_type_filed_to_scripts_table.php

@@ -3,6 +3,14 @@
 # ===================================
 
 fields:
+    type:
+        label: 'rv.phpconsole::lang.models.script.title'
+        span: auto
+        type: dropdown
+        options:
+            php: php
+            js: js
+        default: php
     title:
         label: 'rv.phpconsole::lang.models.script.title'
         span: auto
@@ -12,6 +20,7 @@ fields:
         size: small
         span: auto
         type: textarea
+
     code:
         label: 'rv.phpconsole::lang.models.script.code'
         span: full
