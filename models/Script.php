@@ -51,7 +51,7 @@ class Script extends Model
         ob_start();
         eval($code);
         $output= ob_get_clean();
-        return '<pre class="prettyprint"><code class="prettyprint">'.$ouput.'</code></pre>';
+        return '<pre class="prettyprint"><code class="prettyprint">'.$output.'</code></pre>';
     }
 
 }
