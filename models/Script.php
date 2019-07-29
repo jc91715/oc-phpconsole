@@ -57,7 +57,7 @@ class Script extends Model
         ob_start();
         eval($code);
         $output= ob_get_clean();
-        if(!$this->if_html){
+        if($this->if_html){
             return $output;
         }
         return '<pre class="prettyprint"><code class="prettyprint">'.$output.'</code></pre>';
