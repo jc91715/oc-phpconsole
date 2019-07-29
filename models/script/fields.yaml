@@ -16,6 +16,11 @@ fields:
         span: auto
         type: checkbox
         default: true
+    if_html:
+        label: php 运行显示html
+        span: auto
+        type: checkbox
+        default: false
     title:
         label: 'rv.phpconsole::lang.models.script.title'
         span: auto
