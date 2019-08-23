@@ -3,6 +3,9 @@
 # ===================================
 
 columns:
+    id:
+        label: id
+        sortable: true
     title:
         label: 'rv.phpconsole::lang.models.script.title'
         type: text
