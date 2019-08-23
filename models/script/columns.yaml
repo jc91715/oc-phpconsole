@@ -7,7 +7,7 @@ columns:
         label: 'rv.phpconsole::lang.models.script.title'
         type: text
         searchable: true
-        sortable: true
+#        sortable: true
     description:
         label: 'rv.phpconsole::lang.models.script.description'
         type: text
