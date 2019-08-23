@@ -11,6 +11,10 @@ fields:
             php: php
             js: js
         default: php
+    publish_at:
+        label: 发布时间
+        type: datepicker
+        mode: datetime
     if_run:
         label: 前台运行
         span: auto
