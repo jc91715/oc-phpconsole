@@ -43,9 +43,9 @@ class Script extends Model
 
     public function getJsRunResult(){
         if(!$this->if_run){
-            return ' <script>console.log = function(message) {$(\'#result\').append(message);};eval(`'.'console.log('.$this->run_result.')'.'`)</script>';
+            return ' <script>log = function(message) {$(\'#result\').append(message);};eval(`'.'console.log('.$this->run_result.')'.'`)</script>';
         }
-        return ' <script>console.log = function(message) {$(\'#result\').append(message);};eval(`'.$this->code.'`)</script>';
+        return ' <script>log = function(message) {$(\'#result\').append(message);};eval(`'.$this->code.'`)</script>';
     }
 
     public function getPhpRunResult()
