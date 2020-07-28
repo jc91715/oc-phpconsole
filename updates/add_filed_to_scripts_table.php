@@ -15,6 +15,8 @@ class AddFiledToScriptsTable extends Migration
 
     public function down()
     {
-
+        Schema::table('rv_phpconsole_scripts', function(Blueprint $table) {
+            $table->dropColumn('run_result');
+        });
     }
 }

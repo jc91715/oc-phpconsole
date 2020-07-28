@@ -1,5 +1,6 @@
 <?php namespace RV\PhpConsole\Models;
 
+use Jc91715\Book\Models\Video;
 use Model;
 
 /**
@@ -16,7 +17,6 @@ class Script extends Model
      * @var array Guarded fields
      */
     protected $guarded = ['*'];
-
     /**
      * @var array Fillable fields
      */
@@ -37,7 +37,10 @@ class Script extends Model
     public $belongsToMany = [];
     public $morphTo = [];
     public $morphOne = [];
-    public $morphMany = [];
+
+    public $morphMany = [
+        'videos'           => [Video::class, 'name' => 'videoable']
+    ];
     public $attachOne = [];
     public $attachMany = [];
 

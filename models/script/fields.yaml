@@ -45,6 +45,14 @@ fields:
         label: 运行结果
         type: textarea
 
-
+    videos:
+        span: full
+        path: $/rv/phpconsole/controllers/scriptscontroller/_field_videos.htm
+        context:
+            - update
+            - preview
+            - create
+        type: partial
+        tab: 视频内容
 
 

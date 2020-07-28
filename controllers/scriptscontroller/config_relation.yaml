@@ -1,0 +1,14 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+
+videos:
+    label: 视频内容
+    view:
+        list: $/jc91715/book/models/video/columns.yaml
+        showSearch: true
+        toolbarButtons: create|delete
+    manage:
+        form: $/jc91715/book/models/video/fields.yaml
+        recordsPerPage: 10
